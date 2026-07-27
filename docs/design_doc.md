@@ -1,10 +1,23 @@
 # docling-pk Design Document
 
 ## 1. Project Summary
-_Owner: Lead Engineer - not yet filled in_
+
+docling-pk is a pip-installable Python library that extracts structured data
+from common Pakistani identity and education documents (CNIC, Matric,
+Intermediate, and Degree/Transcript certificates) from a photo, without
+requiring a paid API or cloud service. v1 targets CNIC extraction first,
+producing a structured JSON result with per-field confidence scores rather
+than a wrong or silent guess when a field cannot be read.
 
 ## 2. Problem Statement
-_Not yet filled in_
+
+Organizations onboarding users in Pakistan (fintech KYC, university admissions,
+HR verification) currently rely on manual data entry from photographed
+documents, which is slow and error prone. Existing OCR tools are either paid
+cloud APIs (a data privacy problem for national ID documents) or general-
+purpose OCR libraries that return raw, unstructured text rather than named
+fields. docling-pk closes that gap for the specific document types used in
+Pakistan, offline and open source.
 
 ## 3. Technical Approach - CNIC Extraction
 Owner: Abdul Moiz Muhammad (Research / Implementation Engineer)
@@ -135,13 +148,53 @@ the more honest number and the one used going forward.
   current one, and is being explored separately rather than folded into v1 scope.
 
 ## 4. Module Ownership Table
-_Owner: Lead Engineer - not yet filled in_
+
+With no other active fellows on this project, all modules are currently owned
+by Abdul Moiz Muhammad.
+
+| Module | Responsibility |
+|---|---|
+| `docling_pk/preprocessor.py` | Image loading, blur detection, deskew, denoise, threshold |
+| `docling_pk/ocr.py` | EasyOCR wrapper, 4-way rotation correction |
+| `docling_pk/parsers/cnic.py` | CNIC field extraction |
+| `docling_pk/parsers/matric.py`, `intermediate.py`, `degree.py` | Not started |
+| `docling_pk/schema.py` | FieldResult / DocumentResult dataclasses |
+| `docling_pk/extractor.py` | Top-level API tying preprocessing, OCR, and parsing together |
+| `cli.py` | Command-line interface |
+| `pyproject.toml` | Packaging |
 
 ## 5. Evaluation Plan
-_Owner: Integration Engineer - not yet filled in_
+
+- Test set: 4 real CNIC photos so far (2 clear, 1 blurry, 1 tilted), covering
+  the specific failure modes named in the brief (rotation, partial obscuring,
+  low sharpness). More samples, including old-format CNICs and back-of-card
+  images, are needed before v1 is considered validated.
+- Metric: per-field extraction success (value found vs correctly null) and
+  document-level confidence, not a single pass/fail accuracy number, since
+  some fields (address, gender) are known to be unreliable and should be
+  measured separately rather than averaged away.
+- Edge cases explicitly tested: 90-degree rotation, motion blur, cluttered
+  background. Explicitly not yet tested: partial obscuring by a stamp,
+  old-format (non-Smart) CNIC, back-of-card address extraction.
 
 ## 6. Known Risks
-_Not yet filled in_
 
-## 7. Definition of Done
-_Owner: Lead Engineer - not yet filled in_
+- Single point of failure: with no other active fellows on this project, all
+  research, implementation, and review readiness depends on one person within
+  a fixed timeline.
+- Gender and address extraction are unreliable or unimplemented in v1, as
+  detailed in Section 3.
+- The blur-detection threshold (35) and deskew logic are calibrated on 4
+  samples total; real-world accuracy at scale is unverified.
+- Matric, Intermediate, and Degree document parsers have not been started;
+  only CNIC has been researched and prototyped so far.
+
+## 7. Definition of Done (v1, CNIC only)
+
+- [ ] `preprocess()`, `run_ocr()`, and `cnic.extract()` implemented and merged
+- [ ] CLI produces JSON output matching the schema for a CNIC image
+- [ ] Blurry and rotated images fail gracefully with a clear message
+- [ ] Known limitations (gender, address, wrapped names) documented, not hidden
+- [ ] Package installable via `pip install .`
+- [ ] Matric, Intermediate, Degree parsers: separate milestone, not required
+      for this Definition of Done
