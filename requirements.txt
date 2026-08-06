@@ -1,0 +1,7 @@
+opencv-python
+numpy
+easyocr
+torch
+typer
+pytest
+pytest-cov
