@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docling-pk"
+version = "0.1.0"
+description = "Extract structured data from Pakistani identity and education documents"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Abdul Moiz Muhammad" }
+]
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "easyocr",
+    "torch",
+    "typer",
+]
+
+[project.scripts]
+docling-pk = "cli:app"
+
+[tool.setuptools.packages.find]
+include = ["docling_pk*"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+]
