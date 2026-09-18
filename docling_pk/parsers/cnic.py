@@ -1,7 +1,7 @@
 import re
 
 from docling_pk.schema import FieldResult
-
+from __future__ import annotations
 
 CNIC_PATTERN = re.compile(r"\b\d{5}-\d{7}-\d\b")
 GENDER_PATTERN = re.compile(r"\b(?:gender\s*[:\-]?\s*)?(male|female|m|f)\b", re.IGNORECASE)

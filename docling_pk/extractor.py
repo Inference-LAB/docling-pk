@@ -8,6 +8,7 @@ from docling_pk.ocr import run_ocr
 from docling_pk.parsers import cnic, matric, intermediate
 from docling_pk.parsers._federal_board import detect_document_type
 from docling_pk.schema import DocumentResult, FieldResult
+from __future__ import annotations
 
 SUPPORTED_TYPES = ("cnic", "matric", "intermediate")
 

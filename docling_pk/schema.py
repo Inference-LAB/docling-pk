@@ -6,7 +6,7 @@ FieldResult objects, wrapped in a DocumentResult by the extractor. This
 is the one shape every other module builds against, so a change here
 affects the CLI, the tests, and every parser at once.
 """
-
+from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Optional
 
