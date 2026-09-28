@@ -15,6 +15,21 @@ runner = CliRunner()
 COMMANDS = ["cnic", "matric", "intermediate", "degree"]
 
 
+def _combined_output(result) -> str:
+    """
+    Returns stdout plus stderr if available. click's CliRunner does not
+    consistently capture stderr separately across versions: older
+    versions merge stdout+stderr into one stream (result.output holds
+    both, result.stderr raises ValueError), newer versions capture them
+    separately. Checking both this way works either way, instead of
+    assuming one specific click version's behavior.
+    """
+    combined = result.output
+    if result.stderr_bytes is not None:
+        combined += result.stderr
+    return combined
+
+
 @pytest.mark.parametrize("command", COMMANDS)
 def test_command_registered(command):
     """Each of the four document commands exists and shows help."""
@@ -48,4 +63,4 @@ def test_invalid_path_exits_with_error_code(command):
     """A path that does not exist exits with a distinct error code, not the placeholder code."""
     result = runner.invoke(app, [command, "this/path/does/not/exist.jpg"])
     assert result.exit_code == 2
-    assert "does not exist" in result.stderr
+    assert "does not exist" in _combined_output(result)
