@@ -47,7 +47,15 @@ jobs:
           cache: pip
       - name: System libraries for OpenCV (Linux)
         if: runner.os == 'Linux'
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0
+        timeout-minutes: 5
+        # Usually preinstalled on GitHub runners: only touch apt when missing, so a
+        # slow package mirror can never stall the job.
+        run: |
+          if ldconfig -p | grep -q "libGL.so.1" && ldconfig -p | grep -q "libgthread-2.0.so.0"; then
+            echo "OpenCV system libraries already present"
+          else
+            sudo apt-get update -o Acquire::Retries=3 && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0
+          fi
       - run: python -m pip install --upgrade pip
       - run: pip install -e ".[dev,pdf]"
       - name: Unit tests with coverage gate (no OCR models)
@@ -69,7 +77,15 @@ jobs:
           cache: pip
       - name: System libraries for OpenCV (Linux)
         if: runner.os == 'Linux'
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0
+        timeout-minutes: 5
+        # Usually preinstalled on GitHub runners: only touch apt when missing, so a
+        # slow package mirror can never stall the job.
+        run: |
+          if ldconfig -p | grep -q "libGL.so.1" && ldconfig -p | grep -q "libgthread-2.0.so.0"; then
+            echo "OpenCV system libraries already present"
+          else
+            sudo apt-get update -o Acquire::Retries=3 && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0
+          fi
       - run: python -m pip install --upgrade pip
       - run: pip install -e ".[dev,pdf]"
       - run: pytest -m ocr -v
@@ -89,7 +105,15 @@ jobs:
         with:
           python-version: "3.11"
       - name: System libraries for OpenCV (Linux)
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0
+        timeout-minutes: 5
+        # Usually preinstalled on GitHub runners: only touch apt when missing, so a
+        # slow package mirror can never stall the job.
+        run: |
+          if ldconfig -p | grep -q "libGL.so.1" && ldconfig -p | grep -q "libgthread-2.0.so.0"; then
+            echo "OpenCV system libraries already present"
+          else
+            sudo apt-get update -o Acquire::Retries=3 && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0
+          fi
       - run: python -m pip install --upgrade pip build twine
       - run: python -m build
       - run: twine check --strict dist/*
