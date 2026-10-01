@@ -29,7 +29,7 @@ classifiers = [
 ]
 dependencies = [
     "numpy>=1.21",
-    "opencv-python-headless>=4.5",
+    "opencv-python>=4.5",  # same distribution RapidOCR requires, so only one cv2 is installed
     "rapidocr>=3.0",
     "onnxruntime>=1.16",
     "rapidfuzz>=3.0",

@@ -1,8 +1,8 @@
 """RapidOCR backend (PP-OCR models on ONNX Runtime).
 
-Optional: ``pip install "docling-pk[rapidocr]"``. Much smaller than the
-EasyOCR + PyTorch stack, runs fast on CPU, and is a useful second opinion
-for ensembles. English/Latin only as configured here.
+The default engine, installed with docling-pk. Much smaller than the
+EasyOCR + PyTorch stack, runs fast on CPU, and was more accurate on the
+project's real-sample benchmark. English/Latin only as configured here.
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ def _get_engine():
                 from rapidocr import RapidOCR
             except ImportError as exc:  # pragma: no cover - depends on environment
                 raise ImportError(
-                    'The RapidOCR backend needs extra packages: pip install "docling-pk[rapidocr]"'
+                    "RapidOCR is missing; reinstall docling-pk: pip install --force-reinstall docling-pk"
                 ) from exc
             # max_candidates: the default (1000) silently drops every region past
             # the 1000th contour. Certificates printed on micro-text security

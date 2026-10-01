@@ -68,6 +68,8 @@ pip install "docling-pk[all]"
 
 Python 3.9 to 3.12 on Linux, Windows and macOS. Models are bundled with or
 downloaded by the OCR engines on first use; nothing is sent to any server.
+On minimal Linux images (e.g. `python:3.x-slim` in Docker), OpenCV needs two
+system libraries: `apt-get install -y libgl1 libglib2.0-0`.
 
 ## Usage
 
