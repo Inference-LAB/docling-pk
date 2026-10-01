@@ -1,18 +1,24 @@
 ## What does this PR do?
-[One sentence: what does this PR add, fix, or change?]
- 
-## Which module(s) does it touch?
-[List the files changed and why each was changed]
- 
-## How did you test it?
-[What tests cover this? Run: pytest <test_file> and paste the result summary]
- 
-## Edge cases handled:
-[What inputs could break this? How did you handle them?]
- 
-## Checklist:
-- [ ] Tests added or updated
-- [ ] Docstrings on all new public functions
-- [ ] No unused imports
-- [ ] README updated if public API changed
-- [ ] Lead Engineer has reviewed and approved before submitting to director
+<!-- One or two sentences. -->
+
+## Modules touched
+<!-- Files changed and why. -->
+
+## How was it tested?
+<!-- pytest summary; coverage. -->
+
+## Benchmark impact
+<!-- Required if extraction logic changed: paste the OVERALL / per-type lines from
+     `python benchmarks/run_benchmark.py tests/fixtures/synthetic/labels.json`,
+     before and after. Real-sample numbers: aggregates only. -->
+
+## Edge cases handled
+<!-- What inputs could break this and how they behave now. -->
+
+## Checklist
+- [ ] `ruff check`, `ruff format --check`, `mypy src` pass
+- [ ] Tests added or updated; `pytest` passes
+- [ ] No field can come back `ok` with a guessed value (fallbacks are `low_confidence` with a reason)
+- [ ] Docstrings on new public functions (parameters, returns, example)
+- [ ] README / CHANGELOG updated if behaviour or the public API changed
+- [ ] **No real documents or personal data** in code, fixtures, logs or this description

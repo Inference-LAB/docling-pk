@@ -1,9 +1,28 @@
-*.docx
+# Python
 __pycache__/
-.vscode/
-*.pyc
-venv/
+*.py[cod]
 *.egg-info/
+build/
+dist/
+.eggs/
+
+# Environments
+venv/
+.venv/
+env/
+
+# Tooling
 .pytest_cache/
+.ruff_cache/
+.mypy_cache/
 .coverage
 coverage.xml
+htmlcov/
+.vscode/
+.idea/
+
+# Documents and data that must never be committed: real people's documents
+*.docx
+private/
+private-eval/
+benchmarks/results/*.full.json

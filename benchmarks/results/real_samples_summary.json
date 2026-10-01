@@ -1,0 +1,603 @@
+{
+ "_note": "Aggregate results on 16 real photos of Pakistani documents (8 CNIC fronts, 2 CNIC backs, 2 Matric, 2 Intermediate, 1 degree, 1 transcript). The images and per-field values contain personal data and are NOT published; only counts are.",
+ "dataset": {
+  "images": 16,
+  "labelled_fields": 146,
+  "subject_rows": 30,
+  "conditions": [
+   "clean photo",
+   "rotated 90/270",
+   "skewed on striped cloth",
+   "plastic sleeve glare",
+   "small and soft focus",
+   "motion blur",
+   "scanned",
+   "watermarked digital certificate"
+  ]
+ },
+ "baseline_v0_1": {
+  "accuracy": 0.3493150684931507,
+  "by_doc_type": {
+   "cnic": 0.35294117647058826,
+   "matric": 0.6333333333333333,
+   "intermediate": 0.27586206896551724,
+   "degree": 0.0,
+   "transcript": 0.0
+  },
+  "note": "original pipeline (EasyOCR, line-order regex); its extract() could not be imported, logic replicated"
+ },
+ "v1_core_install": {
+  "overall": {
+   "n": 142,
+   "accuracy": 0.9436619718309859,
+   "coverage": 0.971830985915493,
+   "precision": 0.9710144927536232,
+   "ok_precision": 0.9849624060150376,
+   "ok_count": 133
+  },
+  "by_doc_type": {
+   "cnic": {
+    "n": 68,
+    "accuracy": 0.9117647058823529,
+    "coverage": 0.9411764705882353,
+    "precision": 0.96875,
+    "ok_precision": 1.0,
+    "ok_count": 59
+   },
+   "degree": {
+    "n": 9,
+    "accuracy": 1.0,
+    "coverage": 1.0,
+    "precision": 1.0,
+    "ok_precision": 1.0,
+    "ok_count": 9
+   },
+   "intermediate": {
+    "n": 27,
+    "accuracy": 1.0,
+    "coverage": 1.0,
+    "precision": 1.0,
+    "ok_precision": 1.0,
+    "ok_count": 27
+   },
+   "matric": {
+    "n": 28,
+    "accuracy": 0.9642857142857143,
+    "coverage": 1.0,
+    "precision": 0.9642857142857143,
+    "ok_precision": 0.9642857142857143,
+    "ok_count": 28
+   },
+   "transcript": {
+    "n": 10,
+    "accuracy": 0.9,
+    "coverage": 1.0,
+    "precision": 0.9,
+    "ok_precision": 0.9,
+    "ok_count": 10
+   }
+  },
+  "by_field": {
+   "cnic.address": {
+    "accuracy": 0.0,
+    "n": 2
+   },
+   "cnic.cnic_number": {
+    "accuracy": 0.9,
+    "n": 10
+   },
+   "cnic.country_of_stay": {
+    "accuracy": 0.875,
+    "n": 8
+   },
+   "cnic.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.date_of_expiry": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.date_of_issue": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.father_name": {
+    "accuracy": 0.875,
+    "n": 8
+   },
+   "cnic.gender": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.name": {
+    "accuracy": 0.875,
+    "n": 8
+   },
+   "degree.campus": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.date_of_issue": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.degree": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.father_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.institution": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.registration_number": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.serial_number": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.student_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.year": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "intermediate.board": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.certificate_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "intermediate.father_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.grade": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.group": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.institute": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.max_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.registration_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.roll_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.serial_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.student_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.total_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.year": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.board": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.certificate_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.father_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.grade": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.group": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.institute": {
+    "accuracy": 0.5,
+    "n": 2
+   },
+   "matric.max_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.registration_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.roll_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.serial_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.student_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.total_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.year": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "transcript.campus": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.cgpa": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.date_of_issue": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.degree": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.father_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.institution": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.registration_number": {
+    "accuracy": 0.0,
+    "n": 1
+   },
+   "transcript.student_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.year": {
+    "accuracy": 1.0,
+    "n": 1
+   }
+  },
+  "subjects": {
+   "rows_correct": 30,
+   "rows_expected": 30,
+   "rows_returned": 30
+  },
+  "seconds_per_document": {
+   "mean": 3.3218988687499995,
+   "max": 9.456651
+  }
+ },
+ "v1_full_install": {
+  "overall": {
+   "n": 142,
+   "accuracy": 0.9436619718309859,
+   "coverage": 0.9788732394366197,
+   "precision": 0.9640287769784173,
+   "ok_precision": 0.9923664122137404,
+   "ok_count": 131
+  },
+  "by_doc_type": {
+   "cnic": {
+    "n": 68,
+    "accuracy": 0.9117647058823529,
+    "coverage": 0.9558823529411765,
+    "precision": 0.9538461538461539,
+    "ok_precision": 1.0,
+    "ok_count": 59
+   },
+   "degree": {
+    "n": 9,
+    "accuracy": 1.0,
+    "coverage": 1.0,
+    "precision": 1.0,
+    "ok_precision": 1.0,
+    "ok_count": 8
+   },
+   "intermediate": {
+    "n": 27,
+    "accuracy": 1.0,
+    "coverage": 1.0,
+    "precision": 1.0,
+    "ok_precision": 1.0,
+    "ok_count": 27
+   },
+   "matric": {
+    "n": 28,
+    "accuracy": 0.9642857142857143,
+    "coverage": 1.0,
+    "precision": 0.9642857142857143,
+    "ok_precision": 0.9642857142857143,
+    "ok_count": 28
+   },
+   "transcript": {
+    "n": 10,
+    "accuracy": 0.9,
+    "coverage": 1.0,
+    "precision": 0.9,
+    "ok_precision": 1.0,
+    "ok_count": 9
+   }
+  },
+  "by_field": {
+   "cnic.address": {
+    "accuracy": 0.0,
+    "n": 2
+   },
+   "cnic.cnic_number": {
+    "accuracy": 0.9,
+    "n": 10
+   },
+   "cnic.country_of_stay": {
+    "accuracy": 0.875,
+    "n": 8
+   },
+   "cnic.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.date_of_expiry": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.date_of_issue": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.father_name": {
+    "accuracy": 0.875,
+    "n": 8
+   },
+   "cnic.gender": {
+    "accuracy": 1.0,
+    "n": 8
+   },
+   "cnic.name": {
+    "accuracy": 0.875,
+    "n": 8
+   },
+   "degree.campus": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.date_of_issue": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.degree": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.father_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.institution": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.registration_number": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.serial_number": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.student_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "degree.year": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "intermediate.board": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.certificate_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "intermediate.father_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.grade": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.group": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.institute": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.max_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.registration_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.roll_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.serial_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.student_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.total_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "intermediate.year": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.board": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.certificate_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.father_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.grade": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.group": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.institute": {
+    "accuracy": 0.5,
+    "n": 2
+   },
+   "matric.max_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.registration_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.roll_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.serial_number": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.student_name": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.total_marks": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "matric.year": {
+    "accuracy": 1.0,
+    "n": 2
+   },
+   "transcript.campus": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.cgpa": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.date_of_birth": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.date_of_issue": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.degree": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.father_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.institution": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.registration_number": {
+    "accuracy": 0.0,
+    "n": 1
+   },
+   "transcript.student_name": {
+    "accuracy": 1.0,
+    "n": 1
+   },
+   "transcript.year": {
+    "accuracy": 1.0,
+    "n": 1
+   }
+  },
+  "subjects": {
+   "rows_correct": 30,
+   "rows_expected": 30,
+   "rows_returned": 30
+  },
+  "seconds_per_document": {
+   "mean": 3.710477887499792,
+   "max": 9.105147599999327
+  }
+ }
+}

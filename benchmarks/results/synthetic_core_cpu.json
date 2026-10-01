@@ -1,0 +1,3999 @@
+{
+  "labels": "labels.json",
+  "backend": "rapidocr",
+  "overall": {
+    "n": 213,
+    "accuracy": 0.9624413145539906,
+    "coverage": 0.9624413145539906,
+    "precision": 1.0,
+    "ok_precision": 1.0,
+    "ok_count": 205
+  },
+  "by_doc_type": {
+    "cnic": {
+      "n": 97,
+      "accuracy": 0.9175257731958762,
+      "coverage": 0.9175257731958762,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 89
+    },
+    "degree": {
+      "n": 18,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 18
+    },
+    "intermediate": {
+      "n": 42,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 42
+    },
+    "matric": {
+      "n": 56,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 56
+    }
+  },
+  "by_field": {
+    "cnic.cnic_number": {
+      "n": 14,
+      "accuracy": 0.9285714285714286,
+      "coverage": 0.9285714285714286,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 13
+    },
+    "cnic.country_of_stay": {
+      "n": 12,
+      "accuracy": 0.9166666666666666,
+      "coverage": 0.9166666666666666,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 11
+    },
+    "cnic.date_of_birth": {
+      "n": 12,
+      "accuracy": 0.9166666666666666,
+      "coverage": 0.9166666666666666,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 11
+    },
+    "cnic.date_of_expiry": {
+      "n": 12,
+      "accuracy": 0.9166666666666666,
+      "coverage": 0.9166666666666666,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 11
+    },
+    "cnic.date_of_issue": {
+      "n": 12,
+      "accuracy": 0.9166666666666666,
+      "coverage": 0.9166666666666666,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 11
+    },
+    "cnic.father_name": {
+      "n": 12,
+      "accuracy": 0.9166666666666666,
+      "coverage": 0.9166666666666666,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 11
+    },
+    "cnic.gender": {
+      "n": 12,
+      "accuracy": 0.9166666666666666,
+      "coverage": 0.9166666666666666,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 11
+    },
+    "cnic.name": {
+      "n": 11,
+      "accuracy": 0.9090909090909091,
+      "coverage": 0.9090909090909091,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 10
+    },
+    "degree.cgpa": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.date_of_issue": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.degree": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.father_name": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.institution": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.registration_number": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.serial_number": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.student_name": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "degree.year": {
+      "n": 2,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 2
+    },
+    "intermediate.board": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.certificate_number": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.date_of_birth": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.father_name": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.grade": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.group": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.institute": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.max_marks": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.registration_number": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.roll_number": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.serial_number": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.student_name": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.total_marks": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "intermediate.year": {
+      "n": 3,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 3
+    },
+    "matric.board": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.certificate_number": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.date_of_birth": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.father_name": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.grade": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.group": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.institute": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.max_marks": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.registration_number": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.roll_number": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.serial_number": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.student_name": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.total_marks": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    },
+    "matric.year": {
+      "n": 4,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "precision": 1.0,
+      "ok_precision": 1.0,
+      "ok_count": 4
+    }
+  },
+  "subjects": {
+    "rows_correct": 53,
+    "rows_expected": 53,
+    "rows_returned": 53
+  },
+  "seconds_per_document": {
+    "mean": 2.511810191304348,
+    "max": 5.543541900000001
+  },
+  "cases": [
+    {
+      "id": "00_cnic_front_clean",
+      "correct": 8,
+      "total": 8,
+      "seconds": 2.29,
+      "error": null
+    },
+    {
+      "id": "01_cnic_front_clean",
+      "correct": 8,
+      "total": 8,
+      "seconds": 1.44,
+      "error": null
+    },
+    {
+      "id": "02_cnic_front_rotated90",
+      "correct": 8,
+      "total": 8,
+      "seconds": 2.95,
+      "error": null
+    },
+    {
+      "id": "03_cnic_front_rotated270",
+      "correct": 8,
+      "total": 8,
+      "seconds": 3.0,
+      "error": null
+    },
+    {
+      "id": "04_cnic_front_upside_down",
+      "correct": 8,
+      "total": 8,
+      "seconds": 2.8,
+      "error": null
+    },
+    {
+      "id": "05_cnic_front_skewed",
+      "correct": 8,
+      "total": 8,
+      "seconds": 3.13,
+      "error": null
+    },
+    {
+      "id": "06_cnic_front_photo",
+      "correct": 8,
+      "total": 8,
+      "seconds": 1.61,
+      "error": null
+    },
+    {
+      "id": "07_cnic_front_photo",
+      "correct": 8,
+      "total": 8,
+      "seconds": 1.36,
+      "error": null
+    },
+    {
+      "id": "08_cnic_front_low_res",
+      "correct": 8,
+      "total": 8,
+      "seconds": 1.59,
+      "error": null
+    },
+    {
+      "id": "09_cnic_front_blurry",
+      "correct": 8,
+      "total": 8,
+      "seconds": 1.39,
+      "error": null
+    },
+    {
+      "id": "10_cnic_front_very_blurry",
+      "correct": 0,
+      "total": 8,
+      "seconds": 1.88,
+      "error": null
+    },
+    {
+      "id": "11_cnic_front_occluded_name",
+      "correct": 7,
+      "total": 7,
+      "seconds": 1.51,
+      "error": null
+    },
+    {
+      "id": "12_cnic_back_clean",
+      "correct": 1,
+      "total": 1,
+      "seconds": 2.3,
+      "error": null
+    },
+    {
+      "id": "13_cnic_back_photo",
+      "correct": 1,
+      "total": 1,
+      "seconds": 3.13,
+      "error": null
+    },
+    {
+      "id": "14_matric_clean",
+      "correct": 14,
+      "total": 14,
+      "seconds": 3.0,
+      "error": null
+    },
+    {
+      "id": "15_matric_rotated90",
+      "correct": 14,
+      "total": 14,
+      "seconds": 5.54,
+      "error": null
+    },
+    {
+      "id": "16_matric_photo",
+      "correct": 14,
+      "total": 14,
+      "seconds": 2.68,
+      "error": null
+    },
+    {
+      "id": "17_matric_low_res",
+      "correct": 14,
+      "total": 14,
+      "seconds": 2.5,
+      "error": null
+    },
+    {
+      "id": "18_intermediate_clean",
+      "correct": 14,
+      "total": 14,
+      "seconds": 2.79,
+      "error": null
+    },
+    {
+      "id": "19_intermediate_skewed",
+      "correct": 14,
+      "total": 14,
+      "seconds": 4.98,
+      "error": null
+    },
+    {
+      "id": "20_intermediate_photo",
+      "correct": 14,
+      "total": 14,
+      "seconds": 2.56,
+      "error": null
+    },
+    {
+      "id": "21_degree_clean",
+      "correct": 9,
+      "total": 9,
+      "seconds": 1.71,
+      "error": null
+    },
+    {
+      "id": "22_degree_photo",
+      "correct": 9,
+      "total": 9,
+      "seconds": 1.65,
+      "error": null
+    }
+  ],
+  "mean_cer_text_fields": 0.038461538461538464,
+  "rows": [
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Mahnoor Nawaz",
+      "actual": "Mahnoor Nawaz",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Ahmed Butt",
+      "actual": "Ahmed Butt",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9983,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "F",
+      "actual": "F",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "59869-8797309-2",
+      "actual": "59869-8797309-2",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "08-12-1959",
+      "actual": "08-12-1959",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "11-06-2018",
+      "actual": "11-06-2018",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "00_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "11-06-2023",
+      "actual": "11-06-2023",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Iqra Siddiqui",
+      "actual": "Iqra Siddiqui",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9782,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Usman Javed",
+      "actual": "Usman Javed",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9997,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "F",
+      "actual": "F",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "35568-1518844-8",
+      "actual": "35568-1518844-8",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "22-08-1962",
+      "actual": "22-08-1962",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "13-12-2024",
+      "actual": "13-12-2024",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "01_cnic_front_clean",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "13-12-2031",
+      "actual": "13-12-2031",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Hamza Abbasi",
+      "actual": "Hamza Abbasi",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Zain Rehman",
+      "actual": "Zain Rehman",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "16987-1689768-5",
+      "actual": "16987-1689768-5",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "05-09-1987",
+      "actual": "05-09-1987",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "25-08-2024",
+      "actual": "25-08-2024",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "02_cnic_front_rotated90",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "25-08-2031",
+      "actual": "25-08-2031",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Muhammad Tariq",
+      "actual": "Muhammad Tariq",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9997,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Usman Raza",
+      "actual": "Usman Raza",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9981,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "70819-6727317-7",
+      "actual": "70819-6727317-7",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "14-12-1998",
+      "actual": "14-12-1998",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "25-10-2018",
+      "actual": "25-10-2018",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "03_cnic_front_rotated270",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "25-10-2028",
+      "actual": "25-10-2028",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "rotated270"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Bilal Saleem",
+      "actual": "Bilal Saleem",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Fahad Aslam",
+      "actual": "Fahad Aslam",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9998,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "76634-4002978-7",
+      "actual": "76634-4002978-7",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "17-04-1982",
+      "actual": "17-04-1982",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "25-06-2016",
+      "actual": "25-06-2016",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "04_cnic_front_upside_down",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "25-06-2023",
+      "actual": "25-06-2023",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "upside_down"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Fahad Aslam",
+      "actual": "Fahad Aslam",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9735,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Hassan Saleem",
+      "actual": "Hassan Saleem",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "60457-1784726-7",
+      "actual": "60457-1784726-7",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "08-10-1955",
+      "actual": "08-10-1955",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "22-12-2017",
+      "actual": "22-12-2017",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "05_cnic_front_skewed",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "22-12-2024",
+      "actual": "22-12-2024",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Hassan Raza",
+      "actual": "Hassan Raza",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Zain Khan",
+      "actual": "Zain Khan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9888,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "10798-1933190-9",
+      "actual": "10798-1933190-9",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "03-02-1974",
+      "actual": "03-02-1974",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "05-01-2020",
+      "actual": "05-01-2020",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "06_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "05-01-2025",
+      "actual": "05-01-2025",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Zain Raza",
+      "actual": "Zain Raza",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Fahad Butt",
+      "actual": "Fahad Butt",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "49298-4162294-9",
+      "actual": "49298-4162294-9",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "19-12-1986",
+      "actual": "19-12-1986",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "03-10-2020",
+      "actual": "03-10-2020",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "07_cnic_front_photo",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "03-10-2025",
+      "actual": "03-10-2025",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Hassan Hussain",
+      "actual": "Hassan Hussain",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9998,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Muhammad Abbasi",
+      "actual": "Muhammad Abbasi",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9764,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "65008-7547517-7",
+      "actual": "65008-7547517-7",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "13-04-2001",
+      "actual": "13-04-2001",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "08-12-2025",
+      "actual": "08-12-2025",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "08_cnic_front_low_res",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "08-12-2030",
+      "actual": "08-12-2030",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Usman Rehman",
+      "actual": "Usman Rehman",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Imran Siddiqui",
+      "actual": "Imran Siddiqui",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9996,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "49318-6032080-7",
+      "actual": "49318-6032080-7",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "30-11-1966",
+      "actual": "30-11-1966",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "07-11-2022",
+      "actual": "07-11-2022",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "09_cnic_front_blurry",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "07-11-2032",
+      "actual": "07-11-2032",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "blurry"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "name",
+      "expected": "Ali Nawaz",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": 1.0,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Usman Nawaz",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": 1.0,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "22264-6861642-5",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "03-09-1965",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "28-11-2017",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "10_cnic_front_very_blurry",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "28-11-2024",
+      "actual": null,
+      "status": "not_found",
+      "correct": false,
+      "confidence": 0.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "very_blurry",
+        "unreadable"
+      ],
+      "error": null
+    },
+    {
+      "case": "11_cnic_front_occluded_name",
+      "doc_type": "cnic",
+      "field": "father_name",
+      "expected": "Zain Shah",
+      "actual": "Zain Shah",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": 0.0,
+      "tags": [
+        "cnic_front",
+        "occluded_name"
+      ],
+      "error": null
+    },
+    {
+      "case": "11_cnic_front_occluded_name",
+      "doc_type": "cnic",
+      "field": "gender",
+      "expected": "M",
+      "actual": "M",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "occluded_name"
+      ],
+      "error": null
+    },
+    {
+      "case": "11_cnic_front_occluded_name",
+      "doc_type": "cnic",
+      "field": "country_of_stay",
+      "expected": "Pakistan",
+      "actual": "Pakistan",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "occluded_name"
+      ],
+      "error": null
+    },
+    {
+      "case": "11_cnic_front_occluded_name",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "38771-8841330-1",
+      "actual": "38771-8841330-1",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "occluded_name"
+      ],
+      "error": null
+    },
+    {
+      "case": "11_cnic_front_occluded_name",
+      "doc_type": "cnic",
+      "field": "date_of_birth",
+      "expected": "28-09-1990",
+      "actual": "28-09-1990",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "occluded_name"
+      ],
+      "error": null
+    },
+    {
+      "case": "11_cnic_front_occluded_name",
+      "doc_type": "cnic",
+      "field": "date_of_issue",
+      "expected": "30-05-2019",
+      "actual": "30-05-2019",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "occluded_name"
+      ],
+      "error": null
+    },
+    {
+      "case": "11_cnic_front_occluded_name",
+      "doc_type": "cnic",
+      "field": "date_of_expiry",
+      "expected": "30-05-2026",
+      "actual": "30-05-2026",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_front",
+        "occluded_name"
+      ],
+      "error": null
+    },
+    {
+      "case": "12_cnic_back_clean",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "72052-5898319-5",
+      "actual": "72052-5898319-5",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_back",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "13_cnic_back_photo",
+      "doc_type": "cnic",
+      "field": "cnic_number",
+      "expected": "54948-2141621-1",
+      "actual": "54948-2141621-1",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "cnic_back",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "board",
+      "expected": "FBISE",
+      "actual": "FBISE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "serial_number",
+      "expected": "2618161",
+      "actual": "2618161",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "roll_number",
+      "expected": "4046427",
+      "actual": "4046427",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "registration_number",
+      "expected": "5393655803",
+      "actual": "5393655803",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "certificate_number",
+      "expected": "232092060/198429",
+      "actual": "232092060/198429",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "group",
+      "expected": "GENERAL",
+      "actual": "GENERAL",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "year",
+      "expected": "2015",
+      "actual": "2015",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "grade",
+      "expected": "B",
+      "actual": "B",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9895,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "student_name",
+      "expected": "RABIA HUSSAIN",
+      "actual": "RABIA HUSSAIN",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9627,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "father_name",
+      "expected": "BILAL SIDDIQUI",
+      "actual": "BILAL SIDDIQUI",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9949,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "date_of_birth",
+      "expected": "28-04-1997",
+      "actual": "28-04-1997",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.986,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "institute",
+      "expected": "FG GIRLS COLLEGE, CANTT, PESHAWAR",
+      "actual": "FG GIRLS COLLEGE, CANTT, PESHAWAR",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9965,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "max_marks",
+      "expected": "1100",
+      "actual": "1100",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.95,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "14_matric_clean",
+      "doc_type": "matric",
+      "field": "total_marks",
+      "expected": "651",
+      "actual": "651",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "board",
+      "expected": "FBISE",
+      "actual": "FBISE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "serial_number",
+      "expected": "5220771",
+      "actual": "5220771",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "roll_number",
+      "expected": "6627130",
+      "actual": "6627130",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "registration_number",
+      "expected": "8803163805",
+      "actual": "8803163805",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "certificate_number",
+      "expected": "161880504/871109",
+      "actual": "161880504/871109",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "group",
+      "expected": "SCIENCE",
+      "actual": "SCIENCE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "year",
+      "expected": "2020",
+      "actual": "2020",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "grade",
+      "expected": "C",
+      "actual": "C",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9911,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "student_name",
+      "expected": "IMRAN AHMED",
+      "actual": "IMRAN AHMED",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9549,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "father_name",
+      "expected": "HASSAN SIDDIQUI",
+      "actual": "HASSAN SIDDIQUI",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9923,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "date_of_birth",
+      "expected": "23-10-2004",
+      "actual": "23-10-2004",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9811,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "institute",
+      "expected": "GOVT BOYS COLLEGE, MALL ROAD, LAHORE",
+      "actual": "GOVT BOYS COLLEGE, MALL ROAD, LAHORE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.995,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "max_marks",
+      "expected": "1100",
+      "actual": "1100",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.95,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "15_matric_rotated90",
+      "doc_type": "matric",
+      "field": "total_marks",
+      "expected": "853",
+      "actual": "853",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "rotated90"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "board",
+      "expected": "FBISE",
+      "actual": "FBISE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "serial_number",
+      "expected": "3058316",
+      "actual": "3058316",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "roll_number",
+      "expected": "2084458",
+      "actual": "2084458",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "registration_number",
+      "expected": "1160282720",
+      "actual": "1160282720",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "certificate_number",
+      "expected": "661120183/471238",
+      "actual": "661120183/471238",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "group",
+      "expected": "SCIENCE",
+      "actual": "SCIENCE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "year",
+      "expected": "2017",
+      "actual": "2017",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "grade",
+      "expected": "B",
+      "actual": "B",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9927,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "student_name",
+      "expected": "FATIMA QURESHI",
+      "actual": "FATIMA QURESHI",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9968,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "father_name",
+      "expected": "HASSAN SIDDIQUI",
+      "actual": "HASSAN SIDDIQUI",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9875,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "date_of_birth",
+      "expected": "21-06-2002",
+      "actual": "21-06-2002",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9794,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "institute",
+      "expected": "FG GIRLS COLLEGE, CANTT, PESHAWAR",
+      "actual": "FG GIRLS COLLEGE, CANTT, PESHAWAR",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9883,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "max_marks",
+      "expected": "1100",
+      "actual": "1100",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.95,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "16_matric_photo",
+      "doc_type": "matric",
+      "field": "total_marks",
+      "expected": "688",
+      "actual": "688",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "board",
+      "expected": "FBISE",
+      "actual": "FBISE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "serial_number",
+      "expected": "4829496",
+      "actual": "4829496",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "roll_number",
+      "expected": "491949",
+      "actual": "491949",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "registration_number",
+      "expected": "5366245723",
+      "actual": "5366245723",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "certificate_number",
+      "expected": "681055366/602103",
+      "actual": "681055366/602103",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "group",
+      "expected": "GENERAL",
+      "actual": "GENERAL",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "year",
+      "expected": "2019",
+      "actual": "2019",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "grade",
+      "expected": "C",
+      "actual": "C",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9921,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "student_name",
+      "expected": "AMNA BUTT",
+      "actual": "AMNA BUTT",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.989,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "father_name",
+      "expected": "ALI SHAH",
+      "actual": "ALI SHAH",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9913,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "date_of_birth",
+      "expected": "30-10-2001",
+      "actual": "30-10-2001",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9724,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "institute",
+      "expected": "GOVT BOYS COLLEGE, MALL ROAD, LAHORE",
+      "actual": "GOVT BOYS COLLEGE, MALL ROAD, LAHORE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9861,
+      "cer": 0.0,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "max_marks",
+      "expected": "1100",
+      "actual": "1100",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.95,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "17_matric_low_res",
+      "doc_type": "matric",
+      "field": "total_marks",
+      "expected": "876",
+      "actual": "876",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "matric",
+        "low_res"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "board",
+      "expected": "FBISE",
+      "actual": "FBISE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "serial_number",
+      "expected": "1191416",
+      "actual": "1191416",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "roll_number",
+      "expected": "4173617",
+      "actual": "4173617",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "registration_number",
+      "expected": "3020975659",
+      "actual": "3020975659",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "certificate_number",
+      "expected": "338197458/812133",
+      "actual": "338197458/812133",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "group",
+      "expected": "PRE-ENGINEERING",
+      "actual": "PRE-ENGINEERING",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "year",
+      "expected": "2020",
+      "actual": "2020",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "grade",
+      "expected": "A",
+      "actual": "A",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9985,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "student_name",
+      "expected": "ALI SALEEM",
+      "actual": "ALI SALEEM",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9878,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "father_name",
+      "expected": "MUHAMMAD NAWAZ",
+      "actual": "MUHAMMAD NAWAZ",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9836,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "date_of_birth",
+      "expected": "26-04-2002",
+      "actual": "26-04-2002",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "institute",
+      "expected": "GOVT BOYS COLLEGE, MALL ROAD, LAHORE",
+      "actual": "GOVT BOYS COLLEGE, MALL ROAD, LAHORE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9948,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "max_marks",
+      "expected": "1100",
+      "actual": "1100",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.95,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "18_intermediate_clean",
+      "doc_type": "intermediate",
+      "field": "total_marks",
+      "expected": "864",
+      "actual": "864",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "board",
+      "expected": "FBISE",
+      "actual": "FBISE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "serial_number",
+      "expected": "6237740",
+      "actual": "6237740",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "roll_number",
+      "expected": "3252477",
+      "actual": "3252477",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "registration_number",
+      "expected": "2763248246",
+      "actual": "2763248246",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "certificate_number",
+      "expected": "620610912/105569",
+      "actual": "620610912/105569",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "group",
+      "expected": "PRE-ENGINEERING",
+      "actual": "PRE-ENGINEERING",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "year",
+      "expected": "2025",
+      "actual": "2025",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "grade",
+      "expected": "B",
+      "actual": "B",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9972,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "student_name",
+      "expected": "HAMZA MALIK",
+      "actual": "HAMZA MALIK",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9963,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "father_name",
+      "expected": "HAMZA ABBASI",
+      "actual": "HAMZA ABBASI",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9855,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "date_of_birth",
+      "expected": "04-04-2010",
+      "actual": "04-04-2010",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9911,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "institute",
+      "expected": "MODEL HIGH SCHOOL, SECTOR G-7, ISLAMABAD",
+      "actual": "MODEL HIGH SCHOOL, SECTOR G-7, ISLAMABAD",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9937,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "max_marks",
+      "expected": "1100",
+      "actual": "1100",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.95,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "19_intermediate_skewed",
+      "doc_type": "intermediate",
+      "field": "total_marks",
+      "expected": "887",
+      "actual": "887",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "skewed"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "board",
+      "expected": "FBISE",
+      "actual": "FBISE",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "serial_number",
+      "expected": "7598076",
+      "actual": "7598076",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "roll_number",
+      "expected": "6485104",
+      "actual": "6485104",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "registration_number",
+      "expected": "3842279313",
+      "actual": "3842279313",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "certificate_number",
+      "expected": "646278472/210018",
+      "actual": "646278472/210018",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "group",
+      "expected": "PRE-MEDICAL",
+      "actual": "PRE-MEDICAL",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "year",
+      "expected": "2024",
+      "actual": "2024",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "grade",
+      "expected": "A1",
+      "actual": "A1",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9909,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "student_name",
+      "expected": "HIRA RAZA",
+      "actual": "HIRA RAZA",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9651,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "father_name",
+      "expected": "AHMED KHAN",
+      "actual": "AHMED KHAN",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9979,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "date_of_birth",
+      "expected": "02-04-2006",
+      "actual": "02-04-2006",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9949,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "institute",
+      "expected": "FG GIRLS COLLEGE, CANTT, PESHAWAR",
+      "actual": "FG GIRLS COLLEGE, CANTT, PESHAWAR",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9993,
+      "cer": 0.0,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "max_marks",
+      "expected": "1100",
+      "actual": "1100",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.95,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "20_intermediate_photo",
+      "doc_type": "intermediate",
+      "field": "total_marks",
+      "expected": "791",
+      "actual": "791",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": null,
+      "tags": [
+        "intermediate",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "institution",
+      "expected": "Sample Institute of Engineering and Technology",
+      "actual": "Sample Institute of Engineering and Technology",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9942,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "student_name",
+      "expected": "USMAN SHAH",
+      "actual": "USMAN SHAH",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9996,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "father_name",
+      "expected": "BILAL QURESHI",
+      "actual": "BILAL QURESHI",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9996,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "degree",
+      "expected": "Master of Business Administration",
+      "actual": "Master of Business Administration",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9999,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "serial_number",
+      "expected": "297863",
+      "actual": "297863",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9989,
+      "cer": null,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "registration_number",
+      "expected": "EX/SP13-BCS-192",
+      "actual": "EX/SP13-BCS-192",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9995,
+      "cer": null,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "cgpa",
+      "expected": "3.26",
+      "actual": "3.26",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9967,
+      "cer": null,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "date_of_issue",
+      "expected": "18-07-2017",
+      "actual": "18-07-2017",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.998,
+      "cer": null,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "21_degree_clean",
+      "doc_type": "degree",
+      "field": "year",
+      "expected": "2017",
+      "actual": "2017",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.998,
+      "cer": null,
+      "tags": [
+        "degree",
+        "clean"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "institution",
+      "expected": "Example University of Technology",
+      "actual": "Example University of Technology",
+      "status": "ok",
+      "correct": true,
+      "confidence": 1.0,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "student_name",
+      "expected": "HASSAN ABBASI",
+      "actual": "HASSAN ABBASI",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9997,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "father_name",
+      "expected": "FAHAD SHAH",
+      "actual": "FAHAD SHAH",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9997,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "degree",
+      "expected": "Bachelor of Science in Computer Science",
+      "actual": "Bachelor of Science in Computer Science",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9974,
+      "cer": 0.0,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "serial_number",
+      "expected": "251776",
+      "actual": "251776",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9923,
+      "cer": null,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "registration_number",
+      "expected": "EX/SP16-BCS-042",
+      "actual": "EX/SP16-BCS-042",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.995,
+      "cer": null,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "cgpa",
+      "expected": "2.06",
+      "actual": "2.06",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9859,
+      "cer": null,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "date_of_issue",
+      "expected": "03-10-2020",
+      "actual": "03-10-2020",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9846,
+      "cer": null,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    },
+    {
+      "case": "22_degree_photo",
+      "doc_type": "degree",
+      "field": "year",
+      "expected": "2020",
+      "actual": "2020",
+      "status": "ok",
+      "correct": true,
+      "confidence": 0.9846,
+      "cer": null,
+      "tags": [
+        "degree",
+        "photo"
+      ],
+      "error": null
+    }
+  ]
+}

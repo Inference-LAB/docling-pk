@@ -1,33 +1,103 @@
 [build-system]
-requires = ["setuptools>=68.0"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "docling-pk"
-version = "0.1.0"
-description = "Extract structured data from Pakistani identity and education documents"
+dynamic = ["version"]
+description = "Structured data extraction from Pakistani identity and education documents (CNIC, Matric, Intermediate, degrees)."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
-authors = [
-    { name = "Abdul Moiz Muhammad" }
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Abdul Moiz Muhammad" }, { name = "INFERENCE Lab" }]
+keywords = ["ocr", "cnic", "pakistan", "kyc", "document-ai", "information-extraction", "easyocr", "urdu"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Text Processing",
+    "Typing :: Typed",
 ]
 dependencies = [
-    "opencv-python",
-    "numpy",
-    "easyocr",
-    "torch",
-    "typer",
+    "numpy>=1.21",
+    "opencv-python>=4.5",  # same distribution RapidOCR requires, so only one cv2 is installed
+    "rapidocr>=3.0",
+    "onnxruntime>=1.16",
+    "rapidfuzz>=3.0",
+    "typer>=0.9",
+    "Pillow>=9.0",
+]
+
+[project.optional-dependencies]
+# EasyOCR (PyTorch) adds Urdu address reading and an independent second
+# engine that cross-checks CNIC numbers, dates and IDs.
+urdu = ["easyocr>=1.7"]
+pdf = ["pymupdf>=1.23"]
+all = ["docling-pk[urdu,pdf]"]
+dev = [
+    "pytest>=7",
+    "pytest-cov>=4",
+    "ruff>=0.5",
+    "mypy>=1.8",
+    "build>=1.0",
+    "twine>=5",
 ]
 
 [project.scripts]
-docling-pk = "cli:app"
+docling-pk = "docling_pk.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/Inference-LAB/docling-pk"
+Repository = "https://github.com/Inference-LAB/docling-pk"
+Issues = "https://github.com/Inference-LAB/docling-pk/issues"
+Changelog = "https://github.com/Inference-LAB/docling-pk/blob/main/CHANGELOG.md"
+
+[tool.setuptools.dynamic]
+version = { attr = "docling_pk.__version__" }
 
 [tool.setuptools.packages.find]
-include = ["docling_pk*"]
+where = ["src"]
 
-[project.optional-dependencies]
-dev = [
-    "pytest",
-    "pytest-cov",
+[tool.setuptools.package-data]
+docling_pk = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "ocr: needs the EasyOCR models (downloaded on first run); deselect with -m 'not ocr'",
 ]
+
+[tool.coverage.run]
+source = ["docling_pk"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+exclude_lines = ["pragma: no cover", "if __name__ == .__main__.:", "raise NotImplementedError"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+# UP045/UP007: keep Optional[X]; Typer evaluates CLI annotations at runtime and
+# "X | None" fails there on Python 3.9.
+ignore = ["E501", "UP006", "UP007", "UP035", "UP045", "B008", "SIM108"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+warn_unused_ignores = true
